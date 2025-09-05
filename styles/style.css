@@ -45,7 +45,7 @@ header {
 }
 
 .logo {
-    height: 7rem;
+    height: 5rem;
 }
 
 .nav-bar {
@@ -94,10 +94,10 @@ header {
     text-shadow: 1px 1px 5px var(--base)
 }
 
-.contact-button {
+.header-button {
     padding: 1rem;
     border: 2px solid var(--background);
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     font-size: 1.7rem;
     font-weight: 600;
@@ -105,7 +105,7 @@ header {
     transition: 0.3s;
 }
 
-.contact-button:hover {
+.header-button:hover {
     border: 2px solid var(--base);
     box-shadow: 1px 1px 5px var(--base);
     color: var(--base);
@@ -148,7 +148,7 @@ header {
         display: none;
     }
 
-    .contact-button {
+    .header-button {
         display: none;
     }
 
@@ -675,20 +675,21 @@ input[type="submit"]:hover {
     display: block;
     width: fit-content;
     margin-top: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 600;
     color: #FFF;
-    border-radius: 2rem;
-    background-color: #048f04;
+    border-radius: 0.5rem;
+    border: 2px solid var(--background);
+    background-color: transparent;
     transition: 0.3s ease;
 }
 
 .contact-whatsapp-button:hover {
-    color: #048f04;
-    background-color: #c2eec2;
-    box-shadow: 1px 1px 5px #c2eec2;
+    color: #2db62d;
+    border: 2px solid #048f04;
+    box-shadow: 1px 1px 5px #048f04;
 }
 
 .whatsapp-button {
@@ -727,4 +728,130 @@ footer a {
     text-decoration: none;
     color: inherit;
 }
+
+.post-header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--texts);
+}
+
+.post-container {
+    width: 70%;
+    padding: 5rem 3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: var(--background02);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.post-title-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.post-title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.post-credits-container {
+    position: relative;
+    height: 6rem;
+    width: 29rem;
+    padding: 1rem;
+}
+
+.post-credits-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 6rem;
+    width: 6rem;
+    border: 3px solid var(--details);
+    border-radius: 50%;
+}
+
+.post-credits-author {
+    position: absolute;
+    top: 1.5rem;
+    left: 4.5rem;
+    width: fit-content;
+    padding: 0.8rem 1rem 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--background);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: var(--details);
+}
+
+.post-credits-date {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    background-color: var(--details);
+    color: var(--background);
+}
+
+.post-image-container {
+    height: 25rem;
+    width: 60rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.post-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-container > p,
+.post-container ol,
+.post-container ul {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.post-container ol, .post-container ul {
+    padding-left: 2rem;
+}
+
+.post-container ol {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.post-container ul {
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+.post-footer {
+    padding-top: 2rem;
+}
+
 
