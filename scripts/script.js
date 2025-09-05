@@ -1,5 +1,3 @@
-// CÓDIGO PARA MUDANÇA DE BACKGROUND DO HEADER, DE ACORDO COM A ROLAGEM
-
 const header = document.getElementById('main-header');
 
 function getScrollLimit() {
@@ -22,8 +20,6 @@ window.addEventListener('resize', () => {
   }
 });
 
-// CÓDIGO DO MENU MOBILE
-
 const mobileMenuButton = document.querySelector(".mobile-menu-button");
 const mobileMenu = document.querySelector(".nav-list");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -37,3 +33,17 @@ navLinks.forEach(link => {
         mobileMenu.classList.remove("open");
     });
 });
+
+const observerSections = document.querySelectorAll('#banner, #about, #services, #blog, #contact');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+observerSections.forEach(section => observer.observe(section));
