@@ -5,7 +5,7 @@
     --details: #A47551;
     --texts: #4B2E2E;
     --background: #fcfcfc;
-    --background02: #ebebeb;
+    --background02: #E9D9C4;
     --drafts: #C8A97E;
 }
 
@@ -41,7 +41,7 @@ header {
 }
 
 .scrolled {
-    background-color: var(--texts); 
+    background-image: linear-gradient(-180deg, var(--texts), var(--details)); 
 }
 
 .main-link {
@@ -626,7 +626,7 @@ header {
     display: flex;
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background-color: var(--texts);
+    background-color: var(--details);
 }
 
 #contact h2 {
@@ -671,7 +671,7 @@ input, textarea {
     border-radius: 0.5rem;
     font-size: 1.5rem;
     color: var(--background);
-    background-color: var(--texts);
+    background-color: transparent;
     font-family: 'Nunito', sans-serif;
     resize: none;
 }
@@ -782,9 +782,9 @@ input[type="submit"]:hover {
 }
 
 .contact-whatsapp-button:hover {
-    color: #2db62d;
-    border: 2px solid #048f04;
-    box-shadow: 1px 1px 5px #048f04;
+    color: #25D366;
+    border: 2px solid #25D366;
+    box-shadow: 0px 0px 3px #25D366;
 }
 
 @media (max-width: 530px) {
@@ -837,7 +837,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: var(--texts);
+    background-color: var(--details);
 }
 
 .credits-container {
@@ -872,7 +872,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--texts);
+    background-image: linear-gradient(-180deg, var(--texts), var(--details));
 }
 
 .post-container {
