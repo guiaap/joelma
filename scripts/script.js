@@ -24,16 +24,16 @@ window.addEventListener('resize', () => {
 
 // CÓDIGO DO MENU MOBILE
 
-const menuMobileButton = document.querySelector(".menu-mobile-button");
-const menuMobile = document.querySelector(".nav-list");
+const mobileMenuButton = document.querySelector(".mobile-menu-button");
+const mobileMenu = document.querySelector(".nav-list");
+const navLinks = document.querySelectorAll(".nav-link");
 
-menuMobileButton.addEventListener('click', () => {
-
-    if(menuMobile.classList.contains(".open")) {
-        menuMobile.classList.remove(".open");
-    } else {
-        menuMobile.classList.add(".open");
-    }
+mobileMenuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
 });
 
-
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+    });
+});
