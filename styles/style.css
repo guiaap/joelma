@@ -36,12 +36,38 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem 0.5rem 2rem;
     transition: 0.5s ease;
 }
 
 .scrolled {
     background-color: var(--texts); 
+}
+
+.main-link {
+    text-decoration: none;
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.logo-container {
+    color: var(--background);
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.logo-container p {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container span {
+    font-size: 1.3rem;
 }
 
 .logo {
@@ -52,7 +78,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
     border-radius: 2rem;
 }
 
@@ -72,10 +98,10 @@ header {
     content: "";
     bottom: 0;
     left: 0;
-    height: 3px;
+    height: 2px;
     width: 0;
     background-color: var(--base);
-    transition: width 1s ease;
+    transition: width 0.5s ease;
 }
 
 .nav-item:hover::after {
@@ -95,6 +121,10 @@ header {
 }
 
 .header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     padding: 1rem;
     border: 2px solid var(--background);
     border-radius: 0.5rem;
@@ -103,6 +133,10 @@ header {
     font-weight: 600;
     color: var(--background);
     transition: 0.3s;
+}
+
+.header-button img {
+    height: 3rem;
 }
 
 .header-button:hover {
@@ -379,9 +413,9 @@ header {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     overflow: hidden;
-    border: 1px solid var(--texts);
+    border: 2px solid var(--texts);
     background-color: var(--background);
     box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
     transition: 0.3s ease;
@@ -450,11 +484,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.5rem;
     padding: 1rem;
-    border: 1px solid var(--texts);
-    border-radius: 2rem;
+    border: 2px solid var(--texts);
+    border-radius: 0.5rem;
     background-color: var(--background02);
     box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
 }
@@ -462,9 +496,9 @@ header {
 .preview-image-container {
     height: 40%;
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     overflow: hidden;
-    border: 1px solid var(--texts);
+    border: 2px solid var(--texts);
 }
 
 .preview-image {
@@ -740,7 +774,7 @@ footer a {
 }
 
 .post-container {
-    width: 70%;
+    width: 65%;
     padding: 5rem 3rem;
     margin: auto;
     display: flex;
@@ -825,7 +859,7 @@ footer a {
 .post-container ol,
 .post-container ul {
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: justify;
 }
 
@@ -844,11 +878,6 @@ footer a {
 .post-container ul {
     margin-top: 0.5rem;
 }
-
-
-
-
-
 
 .post-footer {
     padding-top: 2rem;
