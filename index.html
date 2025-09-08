@@ -3,322 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="description" content="Soluções documentais, gestão de pessoas, segurança do trabalho e consultoria especializada por Joelma Matias.">
+    <meta name="theme-color" content="#D2B48C">
     <title>J.M. Soluções Documentais</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header id="main-header">
-        <nav class="nav-bar">
+        <div class="container">
 
-            <a href="index.html" class="main-link">
-                <div class="logo-container">
-                    <img class="logo" src="images/logo.png" alt="Logo de Joelma Matias Soluções Documentais">
-                    <p>Joelma Matias <span>Soluções Documentais</span></p>
-                </div>
+            <nav class="nav-bar" aria-label="Navegação Principal">
+
+                <a href="index.html" class="main-link">
+                    <div class="logo-container">
+                        <img class="logo" src="images/logo.png" alt="Logo de Joelma Matias Soluções Documentais">
+                        <p>Joelma Matias <span>Soluções Documentais</span></p>
+                    </div>
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#banner">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a class="header-button" href="https://wa.me/47991181188" target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato via WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+                    <path d="M16 0C7.164 0 0 7.163 0 16c0 2.82.734 5.497 2.152 7.885L0 32l8.363-2.19A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.09c-2.742 0-5.367-.72-7.66-2.09l-.548-.326-4.957 1.298 1.323-4.84-.357-.566A12.965 12.965 0 013.91 16c0-6.737 5.354-12.09 12.09-12.09S28.09 9.263 28.09 16 22.737 28.09 16 28.09zm7.06-9.802c-.384-.192-2.27-1.12-2.62-1.246-.352-.128-.61-.192-.867.192-.256.384-.995 1.246-1.22 1.502-.224.256-.448.288-.832.096-.384-.192-1.62-.596-3.086-1.902-1.14-1.016-1.907-2.27-2.131-2.654-.224-.384-.024-.59.168-.781.172-.172.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.867-2.086-1.19-2.854-.313-.754-.63-.65-.867-.662-.224-.012-.48-.012-.736-.012-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.71 1.568 3.968c.192.256 2.702 4.125 6.55 5.78.915.395 1.63.63 2.187.805.918.293 1.754.252 2.414.153.736-.11 2.27-.927 2.59-1.822.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z"/>
+                </svg>
+                Vamos Conversar
             </a>
+        
 
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="#banner">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Sobre mim</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-
-        <a class="header-button" href="https://wa.me/47991181188" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
-                <path d="M16 0C7.164 0 0 7.163 0 16c0 2.82.734 5.497 2.152 7.885L0 32l8.363-2.19A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.09c-2.742 0-5.367-.72-7.66-2.09l-.548-.326-4.957 1.298 1.323-4.84-.357-.566A12.965 12.965 0 013.91 16c0-6.737 5.354-12.09 12.09-12.09S28.09 9.263 28.09 16 22.737 28.09 16 28.09zm7.06-9.802c-.384-.192-2.27-1.12-2.62-1.246-.352-.128-.61-.192-.867.192-.256.384-.995 1.246-1.22 1.502-.224.256-.448.288-.832.096-.384-.192-1.62-.596-3.086-1.902-1.14-1.016-1.907-2.27-2.131-2.654-.224-.384-.024-.59.168-.781.172-.172.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.867-2.086-1.19-2.854-.313-.754-.63-.65-.867-.662-.224-.012-.48-.012-.736-.012-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.71 1.568 3.968c.192.256 2.702 4.125 6.55 5.78.915.395 1.63.63 2.187.805.918.293 1.754.252 2.414.153.736-.11 2.27-.927 2.59-1.822.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z"/>
-            </svg>
-            Vamos Conversar
-        </a>
-
-        <button class="mobile-menu-button" id="menu-mobile"><img src="images/menu.png" alt=""></button>
+            <button class="mobile-menu-button" aria-label="Abrir menu de navegação">
+                <img src="images/menu.png" alt="">
+            </button>
+        </div>
     </header>
 
-    <section id="banner" class="hidden">
-        <div class="slide" style="background-image: url(images/banner1.jpg);"></div>
-        <div class="slide" style="background-image: url(images/banner2.jpg);"></div>
-        <div class="slide" style="background-image: url(images/banner3.jpg);"></div>
-
-        <div class="banner-text-container">
-           <h1>Gestão estratégica, segurança e resultados!</h1>
-           <div class="title-bar"></div>
-           <p>Aqui você encontrará soluções personalizadas nas áreas de Administração, Departamento Pessoal, Gestão de Pessoas, Segurança do Trabalho, Contratos e muito mais. Com experiência sólida e formação multidisciplinar, ofereço serviços estratégicos, para empresas que buscam excelência, organização e conformidade.</p>
-        </div>
-    </section>
-
-    <section id="about" class="hidden">
-        <h2 class="section-title">Sobre mim</h2>
-        <div class="title-bar"></div>
-        <div class="about-content-container">
-            <div class="about-text-container">
-                <p>Sou formada em Administração de Empresas e pós-graduada em Gestão Estratégica de Pessoas. Complemento minha atuação com especializações em Segurança do Trabalho, Gestão de Cargos e Salários, Gestão de Contratos, Programação Neurolinguística (PNL) e Administração de Condomínios.</p>
-
-                <p>Atuo há mais de 20 anos na área administrativa, com foco de 15+ anos em Departamento Pessoal. Tenho experiência sólida nos setores de construção civil e eletromecânica, onde desenvolvi expertise em gestão de pessoas, processos e segurança do trabalho.</p>
-
-                <p>Também sou Administradora Judicial e Perita registrada no CRA-SC, o que amplia minha visão técnica e jurídica para apoiar empresas e profissionais em decisões seguras e eficientes.</p>
-
-                <h3>Como trabalho:</h3>
-                <ul>
-                    <li>Atendimento próximo e humanizado.</li>
-                    <li>Processos claros, com rotinas e indicadores.</li>
-                    <li>Entregas objetivas e aplicáveis no dia a dia.</li>
-                </ul>
-
-                <p>Se você busca organização, conformidade e resultados práticos, posso ajudar a construir o caminho do planejamento, à execução.</p>
+    <main>
+        <section id="banner" class="hidden">
+            <div class="slide" style="background-image: url(images/banner1.jpg);"></div>
+            <div class="slide" style="background-image: url(images/banner2.jpg);"></div>
+            <div class="slide" style="background-image: url(images/banner3.jpg);"></div>
+            <div class="banner-text-container">
+               <h1>Gestão estratégica, segurança e resultados!</h1>
+               <div class="title-bar"></div>
+               <p>Aqui você encontrará soluções personalizadas nas áreas de Administração, Departamento Pessoal, Gestão de Pessoas, Segurança do Trabalho, Contratos e muito mais. Com experiência sólida e formação multidisciplinar, ofereço serviços estratégicos, para empresas que buscam excelência, organização e conformidade.</p>
             </div>
-            <div class="about-bottom-container">
-                <div class="about-image-container">
-                    <img src="images/joelma.jpeg" alt="Foto de Joelma Matias">
-                </div>
-                <div class="diferentials-container">
-                    <div class="diferential" id="d1">
-                        <img src="images/humanity.png" alt="">
-                        <span>Atendimento Humanizado</span>
-                    </div>
+        </section>
 
-                    <div class="diferential" id="d2">
-                        <img src="images/agility.png" alt="">
-                        <span>Agilidade</span>
-                    </div>
-                        
-                    <div class="diferential" id="d3">
-                        <img src="images/experience.png" alt="">
-                        <span>anos de experiência</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="about" class="hidden">
 
-    <section id="services" class="hidden">
-
-        <h2 class="section-title">Serviços</h2>
-        <div class="title-bar"></div>
-
-        <div class="card-container">
-
-            <div class="card">
-                <img class="card-image" src="images/icone-departamento-pessoal.png" alt="Ícone de Departamento Pessoal">
-                <div class="card-title-container">
-                    <h3 class="card-title">Departamento Pessoal</h3>
-                    <div class="card-bar"></div>
-                </div>
-                <ul class="card-list">
-                    <li>Admissão e desligamento de colaboradores</li>
-                    <li>Folha de pagamento</li>
-                    <li>Controle de ponto e benefícios</li>
-                    <li>Controle de férias e 13º salário</li>
-                    <li>Suporte ao RH e liderança</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="images/icone-gestao-de-pessoas.png" alt="Ícone de Gestão de Pessoas">
-                <div class="card-title-container">
-                    <h3 class="card-title">Gestão de Pessoas</h3>
-                    <div class="card-bar"></div>
-                </div>
-                <ul class="card-list">
-                    <li>Gestão de cargos e salários</li>
-                    <li>Controle e redação de políticas internas</li>
-                    <li>Pesquisa de Clima Organizacional</li>
-                    <li>Aplicação e controle treinamentos</li>
-                    <li>Suporte a liderança</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="images/icone-seguranca-do-trabalho.png" alt="Ícone de Segurança do Trabalho">
-                <div class="card-title-container">
-                    <h3 class="card-title">Segurança do Trabalho</h3>
-                    <div class="card-bar"></div>
-                </div>
-                <ul class="card-list">
-                    <li>Documentação Legal (PGR, PCMSO, LTCAT, etc.)</li>
-                    <li>Apoio SIPAT e ações de prevenção</li>
-                    <li>DDS e integração</li>
-                    <li>Orientações sobre riscos ocupacionais</li>
-                    <li>Suporte a gestão de SST</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="images/icone-gestao-de-contratos.png" alt="Ícone de Gestão de Contratos">
-                <div class="card-title-container">
-                    <h3 class="card-title">Gestão de Contratos</h3>
-                    <div class="card-bar"></div>
-                </div>
-                <ul class="card-list">
-                    <li>Elaboração e análise contratual</li>
-                    <li>Controle de vigência e cláusulas</li>
-                    <li>Gestão de obrigações e prazos</li>
-                    <li>Intermediação entre partes contratantes</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="images/icone-pericia-e-administracao-judicial.png" alt="Ícone de Perícia e Administração Judicial">
-                <div class="card-title-container">
-                    <h3 class="card-title">Perícia e Administração Judicial</h3>
-                    <div class="card-bar"></div>
-                </div>
-                <ul class="card-list">
-                    <li>Administradora em processos judiciais</li>
-                    <li>Formulação de laudos e pareceres técnicos</li>
-                    <li>Suporte técnico e legal</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="images/icone-administracao-de-condominios.png" alt="Ícone de Administração de condomínios">
-                <div class="card-title-container">
-                    <h3 class="card-title">Administração de Condomínios</h3>
-                    <div class="card-bar"></div>
-                </div>
-                <ul class="card-list">
-                    <li>Gestão financeira</li>
-                    <li>Administração de pessoal</li>
-                    <li>Contratação e acompanhamento de prestadores</li>
-                    <li>Consultoria em rotinas legais e trabalhistas</li>
-                    <li>Suporte técnico e jurídico</li>
-                    <li>Atendimento personalizado e transparente</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="blog" class="hidden">
-
-        <h2 class="section-title">Blog</h2>
-        <div class="title-bar"></div>
-
-        <div class="preview-container">
-
-            <div class="preview">
-                <div class="preview-image-container">
-                    <img class="preview-image" src="images/post-esocial.jpg" alt="">
-                </div>
-                <div class="preview-title-container">
-                    <a href="">
-                        <h3 class="preview-title">O que muda no eSocial para 2025?</h3>
-                    </a>
-                </div>
-                <div class="preview-date-container">
-                    <p class="preview-date">20 de agosto de 2025</p>
-                </div>
-                <div class="preview-text-container">
-                    <p class="preview-text">
-                        O ano de 2025 traz algumas novidades importantes no eSocial, que vão impactar tanto empresas quanto profissionais de contabilidade e departamento pessoal.
-                    </p>
-                </div>
-                <div class="preview-button-container">
-                    <a class="preview-button" href="post1.html">Continue lendo</a>
-                </div>
-            </div>
-            
-            <div class="preview">
-                <div class="preview-image-container">
-                    <img class="preview-image" src="images/post-documentacao.png" alt="">
-                </div>
-                <div class="preview-title-container">
-                    <a href="">
-                        <h3 class="preview-title">A Importância da Documentação Correta para a Segurança e Gestão da Empresa</h3>
-                    </a>
-                </div>
-                <div class="preview-date-container">
-                    <p class="preview-date">04 de setembro de 2025</p>
-                </div>
-                <div class="preview-text-container">
-                    <p class="preview-text">
-                        No dia a dia corporativo, a documentação é muito mais do que burocracia: ela é a base que sustenta a organização, a segurança jurídica e a transparência das relações entre empresa, colaboradores e órgãos reguladores
-                    </p>
-                </div>
-                <div class="preview-button-container">
-                    <a class="preview-button" href="post2.html">Continue lendo</a>
-                </div>
-            </div>
-
-            <div class="preview">
-                <div class="preview-image-container">
-                    <img class="preview-image" src="images/post-treinamento.png" alt="">
-                </div>
-                <div class="preview-title-container">
-                    <a href="">
-                        <h3 class="preview-title">A Importância do Treinamento para o Sucesso na Execução das Atividades</h3>
-                    </a>
-                </div>
-                <div class="preview-date-container">
-                    <p class="preview-date">04 de setembro de 2025</p>
-                </div>
-                <div class="preview-text-container">
-                    <p class="preview-text">
-                        No ambiente corporativo atual, marcado por mudanças rápidas e alta competitividade, o treinamento deixou de ser um diferencial e passou a ser uma necessidade estratégica.
-                    </p>
-                </div>
-                <div class="preview-button-container">
-                    <a class="preview-button" href="post3.html">Continue lendo</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="hidden">
-        <div class="form-container">
-            <h2>Entre em Contato</h2>
-            <div class="title-bar"></div>
-            
-            <form action="https://formspree.io/f/xoveypdz" method="POST">
-
-                <label for="name">Nome:</label>
-                <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea name="message" id="message" placeholder="Digite uma mensagem" required></textarea>
-
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-
-        <div class="address-container">
-
-            <h2>Siga-me</h2>
+            <h2 class="section-title">Sobre mim</h2>
             <div class="title-bar"></div>
 
-            <ul class="social-media">
-                <li>
-                    <a href="https://www.instagram.com/jm.administration/" target="_blank">
-                        <img src="images/instagram.png" alt="">
-                    </a>
-                    @jm.administration
-                </li>
-            </ul>
+            <div class="about-content-container">
 
-            <h3>Outras formas de contato:</h3>
+                <div class="about-text-container">
+                    <p>Sou formada em Administração de Empresas e pós-graduada em Gestão Estratégica de Pessoas. Complemento minha atuação com especializações em Segurança do Trabalho, Gestão de Cargos e Salários, Gestão de Contratos, Programação Neurolinguística (PNL) e Administração de Condomínios.</p>
+                    <p>Atuo há mais de 20 anos na área administrativa, com foco de 15+ anos em Departamento Pessoal. Tenho experiência sólida nos setores de construção civil e eletromecânica, onde desenvolvi expertise em gestão de pessoas, processos e segurança do trabalho.</p>
+                    <p>Também sou Administradora Judicial e Perita registrada no CRA-SC, o que amplia minha visão técnica e jurídica para apoiar empresas e profissionais em decisões seguras e eficientes.</p>
+                    <h3>Como trabalho:</h3>
+                    <ul>
+                        <li>Atendimento próximo e humanizado.</li>
+                        <li>Processos claros, com rotinas e indicadores.</li>
+                        <li>Entregas objetivas e aplicáveis no dia a dia.</li>
+                    </ul>
+                    <p>Se você busca organização, conformidade e resultados práticos, posso ajudar a construir o caminho do planejamento, à execução.</p>
+                </div>
 
-            <ul class="another-contacts">
-                <li>
-                    <img src="images/mail.png" alt="">
-                    comercial@jmadministration.com.br
-                </li>
-                <li>
-                    <img src="images/phone.png" alt="">
-                    (47) 99118-1188
-                </li>
-            </ul>
+                <div class="about-bottom-container">
 
-            <a class="contact-whatsapp-button" href="https://wa.me/47991181188" target="_blank">
-                Entrar em contato via WhatsApp
-            </a>
-        </div>
-    </section>
+                    <div class="about-image-container">
+                        <img src="images/joelma.jpeg" alt="Foto de Joelma Matias">
+                    </div>
+
+                    <div class="diferentials-container">
+
+                        <div class="diferential" id="d1">
+                            <img src="images/humanity.png" alt="Ícone representando atendimento humanizado">
+                            <span>Atendimento Humanizado</span>
+                        </div>
+
+                        <div class="diferential" id="d2">
+                            <img src="images/agility.png" alt="Ícone representando agilidade">
+                            <span>Agilidade</span>
+                        </div>
+        
+                        <div class="diferential" id="d3">
+                            <img src="images/experience.png" alt="Ícone representando mais de 20 anos de experiência">
+                            <span>anos de experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="hidden">
+
+            <h2 class="section-title">Serviços</h2>
+            <div class="title-bar"></div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-image" src="images/icone-departamento-pessoal.png" alt="Ícone representando Departamento Pessoal">
+                    <div class="card-title-container">
+                        <h3 class="card-title">Departamento Pessoal</h3>
+                        <div class="card-bar"></div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Admissão e desligamento de colaboradores</li>
+                        <li>Folha de pagamento</li>
+                        <li>Controle de ponto e benefícios</li>
+                        <li>Controle de férias e 13º salário</li>
+                        <li>Suporte ao RH e liderança</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img class="card-image" src="images/icone-gestao-de-pessoas.png" alt="Ícone representado Gestão de Pessoas">
+                    <div class="card-title-container">
+                        <h3 class="card-title">Gestão de Pessoas</h3>
+                        <div class="card-bar"></div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Gestão de cargos e salários</li>
+                        <li>Controle e redação de políticas internas</li>
+                        <li>Pesquisa de Clima Organizacional</li>
+                        <li>Aplicação e controle treinamentos</li>
+                        <li>Suporte a liderança</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img class="card-image" src="images/icone-seguranca-do-trabalho.png" alt="Ícone representando Segurança do Trabalho">
+                    <div class="card-title-container">
+                        <h3 class="card-title">Segurança do Trabalho</h3>
+                        <div class="card-bar"></div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Documentação Legal (PGR, PCMSO, LTCAT, etc.)</li>
+                        <li>Apoio SIPAT e ações de prevenção</li>
+                        <li>DDS e integração</li>
+                        <li>Orientações sobre riscos ocupacionais</li>
+                        <li>Suporte a gestão de SST</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img class="card-image" src="images/icone-gestao-de-contratos.png" alt="Ícone representando Gestão de Contratos">
+                    <div class="card-title-container">
+                        <h3 class="card-title">Gestão de Contratos</h3>
+                        <div class="card-bar"></div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Elaboração e análise contratual</li>
+                        <li>Controle de vigência e cláusulas</li>
+                        <li>Gestão de obrigações e prazos</li>
+                        <li>Intermediação entre partes contratantes</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img class="card-image" src="images/icone-pericia-e-administracao-judicial.png" alt="Ícone representando Perícia e Administração Judicial">
+                    <div class="card-title-container">
+                        <h3 class="card-title">Perícia e Administração Judicial</h3>
+                        <div class="card-bar"></div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Administradora em processos judiciais</li>
+                        <li>Formulação de laudos e pareceres técnicos</li>
+                        <li>Suporte técnico e legal</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img class="card-image" src="images/icone-administracao-de-condominios.png" alt="Ícone representando Administração de condomínios">
+                    <div class="card-title-container">
+                        <h3 class="card-title">Administração de Condomínios</h3>
+                        <div class="card-bar"></div>
+                    </div>
+                    <ul class="card-list">
+                        <li>Gestão financeira</li>
+                        <li>Administração de pessoal</li>
+                        <li>Contratação e acompanhamento de prestadores</li>
+                        <li>Consultoria em rotinas legais e trabalhistas</li>
+                        <li>Suporte técnico e jurídico</li>
+                        <li>Atendimento personalizado e transparente</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="hidden">
+
+            <h2 class="section-title">Blog</h2>
+            <div class="title-bar"></div>
+
+            <div class="preview-container">
+
+                <article class="preview">
+                    <div class="preview-image-container">
+                        <img class="preview-image" src="images/post-esocial.jpg" alt="Imagem da postagem">
+                    </div>
+                    <div class="preview-title-container">
+                        <a href="post1.html" aria-label="Ir para a postagem completa">
+                            <h3 class="preview-title">O que muda no eSocial para 2025?</h3>
+                        </a>
+                    </div>
+                    <div class="preview-date-container">
+                        <p class="preview-date">20 de agosto de 2025</p>
+                    </div>
+                    <div class="preview-text-container">
+                        <p class="preview-text">
+                            O ano de 2025 traz algumas novidades importantes no eSocial, que vão impactar tanto empresas quanto profissionais de contabilidade e departamento pessoal.
+                        </p>
+                    </div>
+                    <div class="preview-button-container">
+                        <a class="preview-button" href="post1.html" aria-label="Ir para a postagem completa">Continue lendo</a>
+                    </div>
+                </article>
+        
+                <article class="preview">
+                    <div class="preview-image-container">
+                        <img class="preview-image" src="images/post-documentacao.png" alt="Imagem da postagem">
+                    </div>
+                    <div class="preview-title-container">
+                        <a href="post2.html" aria-label="Ir para a postagem completa">
+                            <h3 class="preview-title">A Importância da Documentação Correta para a Segurança e Gestão da Empresa</h3>
+                        </a>
+                    </div>
+                    <div class="preview-date-container">
+                        <p class="preview-date">04 de setembro de 2025</p>
+                    </div>
+                    <div class="preview-text-container">
+                        <p class="preview-text">
+                            No dia a dia corporativo, a documentação é muito mais do que burocracia: ela é a base que sustenta a organização, a segurança jurídica e a transparência das relações entre empresa, colaboradores e órgãos reguladores
+                        </p>
+                    </div>
+                    <div class="preview-button-container">
+                        <a class="preview-button" href="post2.html" aria-label="Ir para a postagem completa">Continue lendo</a>
+                    </div>
+                </article>
+
+                <article class="preview">
+                    <div class="preview-image-container">
+                        <img class="preview-image" src="images/post-treinamento.jpg" alt="Imagem da postagem">
+                    </div>
+                    <div class="preview-title-container">
+                        <a href="post3.html" aria-label="Ir para a postagem completa">
+                            <h3 class="preview-title">A Importância do Treinamento para o Sucesso na Execução das Atividades</h3>
+                        </a>
+                    </div>
+                    <div class="preview-date-container">
+                        <p class="preview-date">04 de setembro de 2025</p>
+                    </div>
+                    <div class="preview-text-container">
+                        <p class="preview-text">
+                            No ambiente corporativo atual, marcado por mudanças rápidas e alta competitividade, o treinamento deixou de ser um diferencial e passou a ser uma necessidade estratégica.
+                        </p>
+                    </div>
+                    <div class="preview-button-container">
+                        <a class="preview-button" href="post3.html" aria-label="Ir para a postagem completa">Continue lendo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden">
+
+            <div class="form-container">
+                <h2>Entre em Contato</h2>
+                <div class="title-bar"></div>
+        
+                <form action="https://formspree.io/f/xoveypdz" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" id="message" placeholder="Digite uma mensagem" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="address-container">
+
+                <h2>Siga-me</h2>
+                <div class="title-bar"></div>
+
+                <ul class="social-media">
+                    <li>
+                        <a href="https://www.instagram.com/jm.administration/" target="_blank" rel="noopener noreferrer" aria-label="Ir para o instagram">
+                            <img src="images/instagram.png" alt="Ícone do instagram">
+                        </a>
+                        @jm.administration
+                    </li>
+                </ul>
+                <h3>Outras formas de contato:</h3>
+                <ul class="another-contacts">
+                    <li>
+                        <img src="images/mail.png" alt="Ícone representado E-mail">
+                        comercial@jmadministration.com.br
+                    </li>
+                    <li>
+                        <img src="images/phone.png" alt="Ícone representado Telefone">
+                        (47) 99118-1188
+                    </li>
+                </ul>
+                <a class="contact-whatsapp-button" href="https://wa.me/47991181188" target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato via WhatsApp">
+                    Entrar em contato via WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="credits-container">
@@ -327,12 +330,12 @@
             </p>
             
             <p>
-                <a href="https://guiaap.github.io/portifolio" target="_blank">Site desenvolvido por G. Amaral</a>
+                <a href="https://guiaap.github.io/portifolio" target="_blank" rel="noopener noreferrer" aria-label="Ir para o site do desenvolvedor">Site desenvolvido por G. Amaral</a>
             </p>
         </div>
     </footer>
 
-    <a class="whatsapp-button" href="https://wa.me/47991181188" target="_blank" aria-label="Botão para ir ao WhatsApp">
+    <a class="whatsapp-button" href="https://wa.me/47991181188" target="_blank" rel="noopener noreferrer" aria-label="Botão para ir ao WhatsApp">
         <img src="images/whatsapp.png" alt="">
     </a>
 

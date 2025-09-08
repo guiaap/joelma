@@ -29,19 +29,25 @@ body {
     background-color: var(--background);
 }
 
-header {
+#main-header {
     position: fixed;
-    z-index: 3;
+    z-index: 1000;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem 0.5rem 2rem;
     transition: 0.5s ease;
 }
 
 .scrolled {
     background-image: linear-gradient(-180deg, var(--texts), var(--details)); 
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem 2rem 0.5rem 2rem;
 }
 
 .main-link {
@@ -53,12 +59,13 @@ header {
     align-items: flex-start;
     justify-content: left;
     gap: 1rem;
-}
-
-.logo-container {
-    color: var(--background);
     font-size: 2.3rem;
     font-weight: 600;
+    color: var(--background);
+}
+
+.logo {
+    height: 5rem;
 }
 
 .logo-container p {
@@ -70,16 +77,11 @@ header {
     font-size: 1.3rem;
 }
 
-.logo {
-    height: 5rem;
-}
-
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    border-radius: 2rem;
 }
 
 .nav-list {
@@ -98,10 +100,11 @@ header {
     content: "";
     bottom: 0;
     left: 0;
-    height: 2px;
+    height: 3px;
     width: 0;
     background-color: var(--base);
-    transition: width 0.5s ease;
+    box-shadow: 0px 0px 5px var(--base);
+    transition: width 0.5s ease-in-out;
 }
 
 .nav-item:hover::after {
@@ -112,12 +115,12 @@ header {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #FFF;
+    color: var(--background);
 }
 
 .nav-link:hover {
     color: var(--base);
-    text-shadow: 1px 1px 5px var(--base)
+    text-shadow: 0px 0px 5px var(--base);
 }
 
 .header-button {
@@ -143,9 +146,9 @@ header {
 
 .header-button:hover {
     border: 2px solid var(--base);
-    box-shadow: 1px 1px 5px var(--base);
+    box-shadow: 0px 0px 0px var(--base);
     color: var(--base);
-    text-shadow: 1px 1px 5px var(--base);
+    text-shadow: 0px 0px 5px var(--base);
 }
 
 .header-button:hover svg {
@@ -169,9 +172,12 @@ header {
 
 @media (max-width: 900px) {
 
-    header {
+    #main-header {
+        background-image: linear-gradient(-180deg, var(--texts), var(--details)); 
+    }
+
+    .container {
         padding: 0.5rem 2rem;
-        background-color: var(--texts);
     }
 
     .nav-bar {
@@ -180,7 +186,7 @@ header {
 
     .nav-list {
         position: absolute;
-        top: 6rem;
+        top: 5.9rem;
         left: 0;
         width: 100%;
         max-height: 0;
@@ -190,7 +196,7 @@ header {
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        background-color: var(--texts);
+        background-color: var(--details);
         transition: max-height 0.3s ease-in-out;
     }
 
@@ -200,7 +206,7 @@ header {
     }
 
     .nav-item {
-        width: 20rem;
+        width: 100%;
     }
 
     .nav-item::after {
@@ -215,8 +221,7 @@ header {
         align-items: center;
         justify-content: center;
         padding: 0.5rem;
-        border: 1px solid var(--background);
-        border-radius: 0.5rem;
+        border-bottom: 1px solid var(--background);
     }
 
     .nav-link:hover {
@@ -441,6 +446,10 @@ header {
 #services {
     padding: 5rem 0rem;
     background-color: var(--background02);
+    background-image: url(../images/pattern.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
     border: 5px double var(--details);
     border-top-left-radius: 20rem;
     box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
@@ -466,7 +475,7 @@ header {
     border-radius: 0.5rem;
     overflow: hidden;
     border: 2px solid var(--texts);
-    background-color: var(--background);
+    background-image: linear-gradient(120deg,var(--background), var(--background02));
     box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
     transition: 0.3s ease;
 }
@@ -540,7 +549,7 @@ header {
     padding: 1rem;
     border: 2px solid var(--texts);
     border-radius: 0.5rem;
-    background-color: var(--background02);
+    background-image: linear-gradient(120deg, var(--background), var(--background02));
     box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
 }
 
@@ -626,7 +635,7 @@ header {
     display: flex;
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background-color: var(--details);
+    background-image: linear-gradient(-180deg, var(--base), var(--texts));
 }
 
 #contact h2 {
@@ -837,7 +846,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: var(--details);
+    background-color: var(--texts);
 }
 
 .credits-container {
@@ -868,6 +877,7 @@ footer a {
 .post-header {
     position: sticky;
     top: 0;
+    z-index: 1000;
     padding: 1rem 8rem;
     display: flex;
     align-items: center;
@@ -983,6 +993,7 @@ footer a {
 
 .post-footer {
     padding-top: 2rem;
+    background-image: linear-gradient(-180deg, var(--base), var(--texts));
 }
 
 @media (max-width: 460px) {
